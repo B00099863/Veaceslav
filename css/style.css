@@ -71,7 +71,7 @@ a{
 
 /*link color*/
 a:link{
-	color: blue;
+	color: white;
 }
 
 /*change color when pass with mouse on top of the link*/ 
@@ -165,7 +165,7 @@ a:active{
 /*Sitemap content from center side*/
 #sitemap2{
 	background-color: black;
-	margin-left: 370px;
+	margin-left: 250px;
 	width: 177px;
 	margin-top: -180px;
 	margin-bottom: 15px;	
@@ -200,10 +200,31 @@ a:active{
 #sitemap3{
 	background-color: black;
 	width: 187px;
-	margin-left: 700px;
+	margin-left: 500px;
 	margin-top: -180px;
 	height: 150px;
 	padding: 10px 0px;
+}
+
+#sitemap4{
+	background-color: black;
+	width: 200px;
+	margin-left: 700px;
+	margin-top: -170px;
+	height: 150px;
+	padding-bottom: 1px;
+}
+
+.facebook_logo_sitemap4{
+	margin-left: 9px;
+}
+
+.feedback_logo_sitemap4{
+	margin-left: 2px;	
+}
+
+.dir_link_sitemap4{
+	margin-left: 3px;
 }
 
 /*first line right*/
@@ -257,6 +278,16 @@ a:active{
 /*Contact photo second left*/
 #contact_photo_2{
 	margin: 20px;
+}
+
+/*email link*/
+.email_link{
+	background-color: blue;
+}
+
+/*feedback link*/
+.feedback_link{
+	background-color: blue;
 }
 
 
@@ -383,9 +414,12 @@ a:active{
 	margin-bottom: 20px;
 	margin-top: 0px;
 	font-size: 18px;
-	background-color:blue;
-	color: white;
 	width: 210px;
+}
+
+/*direction link*/
+.dir_link{
+	background-color: blue;
 }
 
 
@@ -487,6 +521,127 @@ a:active{
 #events_video{
 	margin-left: 80px;
 }
+
+
+
+
+/*style forms*/
+#form_container {
+	width: 475px;	
+	background-color: #e6f9ff;
+	border: 1px solid blue;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+/*style fieldset*/
+fieldset{
+border: 1px solid red;
+width: 400px;
+background-color: white;
+margin: 25px;
+border-radius: 10px;
+}
+
+/*style legend*/
+legend{
+	border: 1px solid blue;
+	background-color: #e6f9ff;
+	border-radius: 10px;
+	padding: 5px 10px;
+	height: 20px;
+	font-weight: bold;
+}
+
+/*style label*/
+label {
+	float: left;
+	width: 150px;
+}
+
+/*style input*/
+input{
+	background-color: white;
+}
+
+/*style select*/
+select{
+	background-color: white;
+	border-radius: 5px;
+}
+
+/*style textarea*/
+.textArea{
+	width: 420px;
+	height: 125px;
+	background-color: white;
+	border-radius: 10px;
+	margin-left: 25px;	
+}
+
+/*style submit button*/
+#submit{
+	font-size: 15px;
+	background-color: blue;
+	color: white;
+	padding: 5px;
+	border-radius: 10px;
+	margin-left: 25px;
+	border: 2px solid black;
+	width: 100px;
+}
+
+/*styling reset button*/
+#reset{
+	font-size: 15px;
+	background-color: blue;
+	padding: 5px;	
+	color: white;
+	border-radius: 10px;
+	margin-left: 30px;
+	border: 2px solid black;
+	width: 100px;
+}
+
+/*styling radio button*/
+input[type="radio"]{
+	float: left;
+	margin-right: 30px;
+}
+
+.gender{
+	float: left;
+	margin-right: 5px;
+}
+
+/*styling checkbox*/
+input[type="checkbox"]{
+	float: left;
+	margin-right: 10px;
+}
+
+.hear{
+	float: left;
+	margin-right: 5px;
+}
+
+.field_6_text{
+	font-size:16px;
+	margin-top: 10px;
+}
+
+.comments_label{
+	margin-left: 25px;
+}
+
+.address{
+	margin-left: 125px;
+	font-weight: bold;
+}
+
+
 
 
 

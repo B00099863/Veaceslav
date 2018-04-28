@@ -1,0 +1,303 @@
+<!--create HTML document-->
+<!DOCTYPE html>
+<html lang="en">
+	<!--create head-->
+	<head>
+		<meta charset="utf-8">
+		<!--Name title-->
+		<title>KIMS Taekwondo Dublin</title>
+		<!--link css file to contact_us.html-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style>
+			body{
+				background-image:url(images/bg2.png);
+				background-size: 100% 100%;
+			}
+		</style>
+	<!--end head-->
+	</head>
+		<!--create body-->
+		<body>
+			<!--create div for container-->
+			<div id = "container">
+
+				<!--display picture on the top left corner of the web page-->
+				<div id="header_image_1">
+					<img src="images/backside_card1.png" width="250"
+						height="150" alt="kims logo">
+				<!--end div for header image-->
+				</div>
+
+					<!--create div for header-->
+					<div id="header">
+					<h1>KIMS Taekwondo Dublin<br>
+						+353 (0)89 49 37 147<br>
+						Instructor Slava
+					</h1>
+				<!--end div for header-->
+				</div>
+
+				<!--create div for header image-->
+				<div id="header_image_2">
+					<img src="images/inyani1.png" width="350" height="200"
+						alt="inyani logo">
+				<!--end div for header image-->
+				</div>
+
+				<!--create div for navigation bar-->
+				<div id = "navbar">
+					<!--link unordered list-->
+					<ul>
+						<li><a href = "index.html">Home</a><strong> | </strong></li>
+						<li><a href = "contact_us.html">Contact Us</a><strong> | </strong></li>
+						<li><a href = "about_us.html">About Us</a><strong> | </strong></li>
+						<li><a href = "history.html">History</a><strong> | </strong></li>
+						<li><a href = "gallery.html">Gallery</a><strong> | </strong></li>
+						<li><a href = "location.html">Location</a><strong> | </strong></li>
+						<li><a href = "masters.html">Masters</a><strong> | </strong></li>
+						<li><a href = "kims_team.html">Kims Team</a><strong> | </strong></li>
+						<li><a href = "terminology.html">Terminology</a><strong> | </strong></li>
+						<li><a href = "events.html">Events</a><strong> | </strong></li>
+						<li><a href = "form.html" class="current_page">Form</a></li>
+					<!--end link unordered list-->
+					</ul>
+				<!--end div for navigation bar-->
+				</div>
+
+				<!--create div for container-->
+				<div id = "form_container">
+					<form class="your_information" action=mailto:kims.taekwondo@yahoo.com
+						method="post" oninput="x.value=parseInt(a.value)" autocomplete="on">
+
+						<!--create legend and fieldset for survey-->
+						<fieldset id="field_1">
+							<legend>Member Ship Form</legend>
+								<p>
+									To be our member please fill out this survey.
+								</p>
+							</fieldset>
+
+						<!--create legend and fieldset for user information-->
+						<fieldset id="field_2">
+							<legend>Your Information</legend>
+								<!--create textfield-->
+								<p>
+									<label for="firstName">First Name:</label>
+									<input type="text" name="first_name" id="firstName"
+										required placeholder="Enter Your Fisrt Name"
+											size="20" maxlength="25" autofocus />
+								</p>
+								<p>
+									<label for="lastName">Last Name:</label>
+									<input type="text" name="last_name" id="lastName"
+										required placeholder="Enter Your Last Name"
+											size="20" maxlength="25" />
+								</p>
+								<p>
+									<label for="dateOfBirth">Date of Birth:</label>
+									<input type="date" name="birthday" id="dateOfBirth"
+										min="1920-01-01" max="2018-12-31" size="20"
+											autocomplete="off"/>
+								</p>
+								<p>
+									<label for="mobileNum">Mobile number</label>
+									<input type="tel" name="tel" id="mobileNum" size="20"
+										pattern="^\d{10}$" required title="Mobile Number
+											(Format:9999999999)" placeholder="Enter Your Mobile Number"
+												autocomplete="off">
+								</p>
+
+								<p>
+									<label for="email">Email Address</label>
+									<input type="email" name="Email" id="email" required placeholder="Enter Your Email Address"
+										pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" size="20" maxlength="30"
+											autocomplete="off"/>
+								</p>
+								<p>
+									<span class="gender">Male</span>
+									<input type="radio" name="gender" id="male" value="male" required>
+									<span class="gender">Female</span>
+									<input type="radio" name="gender" id="female" value="female" required>
+								</p>
+								<br>
+								<br>
+								<p>
+									<label class="address_label">Enter Your Address:</label>
+								</p>
+								<br>
+								<p>
+									<label for="address_1">First Line:</label>
+									<input type="text" name="address" id="address_1"
+										required placeholder="Enter First Line of your Address"
+											size="30" maxlength="30" />
+								</p>
+								<p>
+									<label for="address_2">Second Line:</label>
+									<input type="text" name="address" id="address_2"
+										required placeholder="Enter Second Line of your Address"
+											size="30" maxlength="30" />
+								</p>
+								<p>
+									<label for="address_3">Third Line (optional):</label>
+									<input type="text" name="address" id="address_3"
+										required placeholder="Enter Third Line of your Address"
+											size="30" maxlength="30" />
+								</p>
+								<p>
+									<label for="address_4">City:</label>
+										<input type="text" name="address" id="address_4"
+											required placeholder="Enter your City"
+												size="30" maxlength="30" />
+								</p>
+								<p>
+									<label for="address_5">County:</label>
+										<input type="text" name="address" id="address_5"
+											required placeholder="Enter your County"
+												size="30" maxlength="30" />
+								</p>
+								<p>
+									<label for="address_6">Postal/Zip Code:</label>
+										<input type="text" name="address" id="address_6"
+											required placeholder="Enter your Postal/Zip Code"
+												size="30" maxlength="30" />
+								</p>
+						</fieldset>
+
+						<!--create legend and fieldset for checkbox-->
+						<fieldset id="field_3">
+							<legend>Would you like to receive a special offers?</legend>
+								<input type="checkbox" name="yes" value="on" checked="checked">YES, I'd like to
+									receive information about the special offers.
+						</fieldset>
+
+						<!--create legend and fieldset-->
+						<fieldset id="field_5">
+							<legend>How did you hear about us?</legend>
+								<span class="hear">Internet</span>
+								<input type="radio" name="subject" id="search_engine"
+									value="search_engine" required>
+								<span class="hear">Friend</span>
+								<input type="radio" name="subject" id="friend"
+									value="friend" required>
+								<span class="hear">Other</span>
+								<input type="radio" name="subject" id="other"
+									value="other" checked="checked" required>
+						</fieldset>
+
+						<!--create a dropdown menu-->
+						<fieldset id="field_4">
+							<legend>How would you like to contact you?</legend>
+								<select name="contact" id="contactMenu"  size="1">
+									<option value="email">Email</option>
+									<option value="post">Post</option>
+									<option value="phone">Phone</option>
+									<option value="facebook">Facebook</option>
+								</select>
+							</fieldset>
+
+						<!--create radio button-->
+						<fieldset id="field_6">
+							<legend>Rate our Website</legend>
+								<p class="field_6_text">
+									On the scale from 1 to 10:
+									<input type="range" name="a" id="range" value="1" min="1" max="10">
+									<output name="x"></output>
+								</p>
+						</fieldset>
+
+						<!-- create text area -->
+						<div class="comments_label" >
+								Comments:
+						</div>
+
+							<p>
+								<textarea rows="10" cols="50" name="comments" class="textArea"
+									placeholder="Enter your comment here..."></textarea>
+							</p>
+
+						<!--create submit and reset button-->
+						<div id="buttons">
+							<p>
+								<input type="submit" name="submit" id="submit" value="Submit">
+								<input type="reset" name="reset" id="reset" value="Reset">
+							</p>
+						</div>
+						<!-- end form -->
+					</form>
+
+				<!--end div for form_container-->
+				</div>
+
+
+
+				<!--create div for sitemap container-->
+				<div id = "sitemap_container">
+				<!--end div for sitemap container-->
+				</div>
+
+				<!--create div for sitemap 1-->
+				<div id = "sitemap1">
+					<!--link unordered list-->
+					<ul>
+						<li><a href = "index.html" class="left_side_1">Home</a></li>
+						<li><a href = "contact_us.html" class="left_side_2" >Contact Us</a></li>
+						<li><a href = "about_us.html" class="left_side_3">About Us</a></li>
+						<li><a href = "history.html" class="left_side_4">History</a></li>
+					<!--end link unordered list-->
+					</ul>
+				<!--end div for sitemap 1-->
+				</div>
+
+				<!--create div for sitemap 2-->
+				<div id = "sitemap2">
+					<!--link unordered list-->
+					<ul>
+						<li><a href = "gallery.html" class="center_side_1">Gallery</a></li>
+						<li><a href = "location.html" class="center_side_2">Location</a></li>
+						<li><a href = "masters.html" class="center_side_3">Masters</a></li>
+						<li><a href = "kims_team.html" class="center_side_4">Kims Team</a></li>
+					<!--end link unordered list-->
+					</ul>
+				<!--end div for sitemap 2-->
+				</div>
+
+				<!--create div for sitemap 3-->
+				<div id = "sitemap3">
+					<!--link unordered list-->
+					<ul>
+						<li><a href = "terminology.html" class="right_side_1">Terminology</a></li>
+						<li><a href = "events.html" class="right_side_2">Events</a></li>
+						<li><a href = "form.html" class="current_page right_side_3">Form</a></li>
+					<!--end link unordered list-->
+					</ul>
+				<!--end div for sitemap 3-->
+				</div>
+
+				<!--create div for sitemap 4-->
+				<div id = "sitemap4">
+					<!--link unordered list-->
+					<ul>
+						<li>Like Us: <a href="https://www.facebook.com/KimsTaekwondoDublin/?ref=bookmarks" target="_blank"><img src="images/facebook_logo.jpg" class="facebook_logo_sitemap4" width="30" height="25" alt = "Photo of Facebook Logo"></a></li>
+						<li>Email Us: <a href="mailto:kims.taekwondo@yahoo.com" class="email_link_sitemap4" target="_blank"><img src="images/yahoo_logo.jpg" width="30" height="25" alt = "Photo of Yahoo Logo"></a></li>
+						<li>Feedback:<a href="mailto:kimstaekwondowtf@gmail.com" target="_blank"><img src="images/feedback_logo.jpg" class="feedback_logo_sitemap4" width="30" height="25" alt = "Photo of Feedback Logo"></a></li>
+						<li>Direction:<a href="https://www.google.ie/maps/place/Corduff+Community+Resource+Centre/@53.4001132,-6.3779961,16z/data=!4m5!3m4!1s0x486712a5f8f79cbd:0xde7dd65626f287da!8m2!3d53.399403!4d-6.377744?hl=en"
+							class="dir_link_sitemap4" target="_blank"><img src="images/google_map_logo.png" width="30" height="25" alt = "Photo of Google Map Logo"></a></li>
+					<!--end link unordered list-->
+					</ul>
+				<!--end div for sitemap 4-->
+				</div>
+
+				<!--create footer-->
+				<div id = "footer">
+					<small>&copy;:copyright 2018</small>
+				<!--end div for footer-->
+				</div>
+
+			<!--end of container div-->
+			</div>
+
+		<!--end body-->
+		</body>
+
+<!--end html-->
+</html>
